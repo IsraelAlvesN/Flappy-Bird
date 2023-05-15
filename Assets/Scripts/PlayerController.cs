@@ -36,4 +36,28 @@ public class PlayerController : MonoBehaviour
         myRB.velocity = Vector3.zero;
         myRB.AddForce(new Vector3(0, jumpPower, 0), ForceMode.Impulse);
     }
+
+    private void OnCustomCollisionEnter(GameObject other)
+    {
+        bool isSensor = other.CompareTag("PointSensor");
+        if (isSensor)
+        {
+            //increase point
+            Debug.Log("Point");
+        }
+        else
+        {
+            //gameOver
+            Debug.Log("GameOver");
+        }
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        OnCustomCollisionEnter(other.gameObject);
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        OnCustomCollisionEnter(other.gameObject);
+    }
 }

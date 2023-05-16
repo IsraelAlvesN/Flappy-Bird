@@ -846,6 +846,7 @@ MonoBehaviour:
   obstacleOffSetY: {x: -1.5, y: 1.5}
   obstaclePrefabs:
   - {fileID: 6264858282142673558, guid: 16063565e32221e4ca3b09b1a795f428, type: 3}
+  score: 0
 --- !u!114 &1524161660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1069,7 +1070,7 @@ PrefabInstance:
     - target: {fileID: 6779469291933569656, guid: fd98cbea8e7519346a61a2f59e4e9302,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.85
       objectReference: {fileID: 0}
     - target: {fileID: 6779469291933569656, guid: fd98cbea8e7519346a61a2f59e4e9302,
         type: 3}

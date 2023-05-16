@@ -12,7 +12,13 @@ public class ObstacleSpawner : MonoBehaviour
     }
     void Update()
     {
+        //get gameManager
         var gameManager = GameManager.Instance;
+        //ignore if game is over
+        if (gameManager.IsGameOver())
+        {
+            return;
+        }
 
         cooldown -= Time.deltaTime;
         if(cooldown <= 0f)

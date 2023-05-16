@@ -17,7 +17,8 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         jumpCooldown -= Time.deltaTime;
-        bool canJump = jumpCooldown <= 0;
+        bool isGameActive = GameManager.Instance.IsGameActive();
+        bool canJump = jumpCooldown <= 0 && isGameActive;
 
         if (canJump)
         {
@@ -27,6 +28,9 @@ public class PlayerController : MonoBehaviour
                 Jump();
             }
         }
+
+        //toggle gravity
+        myRB.useGravity = isGameActive;
     }
 
     private void Jump()
@@ -42,13 +46,14 @@ public class PlayerController : MonoBehaviour
         bool isSensor = other.CompareTag("PointSensor");
         if (isSensor)
         {
+            GameManager.Instance.score++;
             //increase point
-            Debug.Log("Point");
+            Debug.Log("Score: " + GameManager.Instance.score);
         }
         else
         {
             //gameOver
-            Debug.Log("GameOver");
+            GameManager.Instance.EndGame();
         }
     }
 

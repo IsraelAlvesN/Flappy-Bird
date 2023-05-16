@@ -12,12 +12,20 @@ public class ObstacleMove : MonoBehaviour
     //This will update with a fixed frame rate, according the game physics
     void FixedUpdate()
     {
+        //get gameManager
+        var gameManager = GameManager.Instance;
+        //ignore if game is over
+        if (gameManager.IsGameOver())
+        {
+            return;
+        }
+
         //move object
-        float x = GameManager.Instance.obstacleSpeed * Time.fixedDeltaTime;
+        float x = gameManager.obstacleSpeed * Time.fixedDeltaTime;
         transform.position -= new Vector3(x, 0, 0);
 
         //Destroy object
-        if(transform.position.x <= -GameManager.Instance.obstacleOffSetX)
+        if(transform.position.x <= -gameManager.obstacleOffSetX)
         {
             Destroy(gameObject);
         }

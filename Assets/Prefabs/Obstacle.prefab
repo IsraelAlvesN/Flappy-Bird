@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 4762550905330684689}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.64, y: 1.5, z: -0.000000029802322}
-  m_LocalScale: {x: 0.41091, y: 2.8053, z: 1}
+  m_LocalScale: {x: 0.20025699, y: 2.9709818, z: 0.48735}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6264858282142673559}
@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: -7917294514359477880}
   m_Layer: 0
   m_Name: Obstacle
-  m_TagString: Untagged
+  m_TagString: PointSensor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

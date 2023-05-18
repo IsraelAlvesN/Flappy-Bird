@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 5459172839317737463}
   - component: {fileID: 2139984885615561505}
   - component: {fileID: 1137736521118493295}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wing
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,9 +95,9 @@ GameObject:
   - component: {fileID: 4466860244985107481}
   - component: {fileID: 3050965696679500139}
   - component: {fileID: 4223608909742364858}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -175,11 +175,11 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6819202192498245408}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.48607814
+  m_Center: {x: 0, y: 0, z: 0.013921857}
 --- !u!1 &7805834807913693401
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,9 +191,9 @@ GameObject:
   - component: {fileID: 8467100732108195103}
   - component: {fileID: 2686927643404888972}
   - component: {fileID: 6256804592860458968}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Eye1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -274,9 +274,9 @@ GameObject:
   - component: {fileID: 1032234869272686301}
   - component: {fileID: 8350891826831887721}
   - component: {fileID: 3972930616432512167}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Beak
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -357,9 +357,9 @@ GameObject:
   - component: {fileID: 6779469291933569656}
   - component: {fileID: 921828140570284952}
   - component: {fileID: 9189490840093149503}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -426,9 +426,9 @@ GameObject:
   - component: {fileID: 8731630972820983562}
   - component: {fileID: 776871456064144126}
   - component: {fileID: 4038301815294199118}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Eye
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
